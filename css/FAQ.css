@@ -1,0 +1,13 @@
+.description_FAQ {
+    font-size: 20px;
+}
+p.question {
+    font-size: 25px;
+    font-style: italic;
+}
+.header {
+    max-height: 1300px;
+}
+body {
+    overflow-y: scroll;
+}

@@ -1,0 +1,219 @@
+h1, h2, h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+h1 { 
+    color: #333;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ul, li {
+    display: block;
+    padding: 0; /*обнуляем отступ отовсюду*/
+    margin: 0; /*обнуляем отступ по бокам*/
+}
+body {
+    background: rgb(229, 225, 251);
+    padding: 0;
+    margin: 0;
+    font-family: open sans,sans-serif;
+    color: rgba(0,0,0,.88);
+    overflow: hidden;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.header {
+    background: url('../img/дорога исходник.png') no-repeat center top / cover;
+    padding-top: 57px;
+    padding-bottom: 600px;
+    width: 100%;
+    max-height: 289px;
+}
+.header a {
+    color: rgb(36, 26, 82);
+}
+.logo {
+    margin-right: 69px; /*отступ после лого*/
+}
+.menu {
+    display: flex; /*выравнивает все элементы в одну линию*/
+}
+.menu li a {
+    font-size: 17px;
+    text-decoration: none; /*убирает подчёркивание от ссылки*/
+}
+.menu li {
+    margin-right: 40px;
+}
+a.account {
+    color: #00a0dd;
+}
+.account {
+    padding: 8px 25px;
+    border: 2px solid #130420;
+    border-radius: 16px;
+    font-size: 19px;
+    text-decoration: none;
+    margin-left: auto;
+}
+.account:hover {
+    background: rgb(115, 215, 255);
+    color: rgb(36, 26, 82);
+}
+.nav {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em; /*расстрояние между символами*/
+    width: 100%;
+}
+.learnPlaying {
+    font-size: 60px;
+    margin-top: 216px;
+}
+.learnPlaying h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+a.btn {
+    color: rgb(0, 160, 221);
+}
+.btn {
+    display: block;
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 8px 25px;
+    border: 2px solid #130420;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: rgb(115, 215, 255);
+    color: rgb(36, 26, 82);
+}
+.footer {
+    color: rgba(236, 224, 224, 0.88);
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: -300px;
+}
+.footer-text {
+    margin-bottom: -300px;
+    font-size: 15px;
+    display: flex;
+    padding: 114px 0 0 0 0;
+    margin-top: -100px;
+    align-items: center;
+    height: 100px;
+}
+.footer-text p {
+    margin-right: 30px;
+}
+a.VK {
+    color: rgba(236, 224, 224, 0.88);
+    text-decoration: none;
+}
+
+/* скрытое меню мобилок */
+.dropdown { 
+    display: none;
+}
+
+/* адаптация под размер окна */
+@media screen and (max-height: 938px) {
+    body{
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .nav {
+    width: 80%;
+    }
+    .footer {
+        width: 80%;
+    }
+    .container {
+        width: 80%;
+    }
+    .account {
+        margin-left: 100px;
+    }
+}
+/* адаптация под размер окна мобилок */
+@media screen and (max-height: 1920px) and (max-width: 1080px) {
+    .nav {
+        width: 40%;
+        align-items:initial;
+        }
+        .footer {
+            width: 40%;
+        }
+        .container {
+            width: 40%;
+        }
+        .account {
+            margin-left: 50px;
+        }
+
+
+    /* Dropdown Button */
+.new_menu {
+    margin-top: 10px;
+    background-color: #2196F3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.new_menu:hover, .dropdown:hover .btn  {
+    background-color: #0b7dda;
+}
+
+#headen {
+    display: none;
+}
+}

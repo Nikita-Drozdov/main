@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключаем шрифт Антон -->
+<!--   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet"> --> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/poll.css"> 
+    <title>plot-education</title> <!--отображение ссылки-->
+    <link rel="shortcut icon" href="img/PlotIcon.png" type="LogoRLS"> <!--иконка в адресной строке-->
+    
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+                    <img src="img/PlotIcon.png" width="45" height="50" alt="clear logo RLS" class="logo">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Партнёры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="education.html">
+                            Обучение
+                        </a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+                <a class="account" href="account.html">
+                    Личный кабинет
+                </a>
+            </div>
+        </div>
+
+<!-- Все изменения внёс только в этот файл, scriptjs и poll.css  -->
+
+    <section id="poll">
+        <form action="#" id="submit form">
+
+            <div id="StartDiv" class="">
+                    <p class="TextForNov"> Молодой работник порта собирается на первый рабочий день. Он ещё зелёный и не знает, что его ждёт.
+                        Нашего главного героя зовут Константин, и сегодня он встретит первые испытания в порту.
+                        </p>
+                    <button class="ButtonToStart" id="ButtonToStart">Продолжить</button>
+                </div>
+            </div>
+
+            <div id="GameOverDiv" class="hidden">
+                
+                <p class="TextForNov" id="GameOv"> Игрок попадает сюда если проиграл </p>
+                
+                    <button class="ButtonToRestart">Смириться и попробовать ещё раз</button>
+                
+            </div>
+
+            <div id="div1" class="hidden">
+                    <p class="TextForNov" id="passage"> Вы попали в такую ситуацию и нужно выбрать одну из трёх кнопок </p>
+                    <button class="Button0" id="Button0">Первая кнопка</button>
+                    <button class="Button1" id="Button1">Вторая кнопка</button>
+                    <button class="Button2" id="Button2">Третья кнопка</button>
+                
+            </div>
+
+            <div id="div11" class="hidden">
+                    <p class="TextForNov" id="Nice"> Хорошие последствия </p>
+                    <button class="Button3" id="Button3">Продолжить</button>
+                
+            </div>
+
+            <div id="div12" class="hidden">
+                    <p class="TextForNov" id="Bad"> Плохие последствия, но игра продолжается </p>
+                    <button class="Button3" id="Button">Продолжить</button>
+                
+            </div>
+
+            <div id="FinalDiv" class="hidden">
+                    <p class="TextForNov" id="result"></p>
+                    <button class="ButtonToRestart">Начать сначала</button>
+                
+            </div>
+
+        </form>
+    </section>
+</header>
+<script type="text/javascript" src="js/script.js"></script>
+
+<footer class="footer">            
+    <div class="footer-text">
+        <p>
+            2021 ПЛОТ
+        </p>
+        <a href="https://vk.com/rulogsim" class="VK">
+            VK
+        </a>
+
+    </div>
+</footer>
+    <!-- игрался с классами и их изменением в CSS
+    <h1 class="Russian">Russian</h1>
+    <h1 class="Logistic">Logistic</h1>
+    <h1 class="Simulator">Simulator</h1>
+    -->
+</body>
+</html>

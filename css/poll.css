@@ -1,0 +1,43 @@
+form {
+    padding: 50px 0 0 325px;
+}
+button {
+    margin-right: 40px;
+    margin-top: 20px;
+}
+/*рамочка для окна с текстом и кнопками (очень очень условная)*/
+.border{
+    border-style: solid;
+    border-radius: 5px;
+    width: 200px;
+    border-color: black;
+    padding: 100px 0 50px 1000px;
+}
+.hidden {
+    display: none;
+}
+.TextForNov{
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 1000px;
+    margin-bottom: 23px;
+}
+
+/* адаптация под размер окна */
+@media screen and (max-width: 1600px) {
+    .border{
+        padding: 100px 0 50px 800px;
+    }
+    form {
+        padding: 50px 0 0 175px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .border{
+        padding: 50px 0 50px 600px;
+    }
+    form {
+        padding: 50px 0 0 150px;
+    }
+}
